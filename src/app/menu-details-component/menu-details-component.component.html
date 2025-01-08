@@ -1,0 +1,9 @@
+<div *ngIf="menu; else loading">
+  <h1>{{ menu?.title }}</h1>
+  <img [src]="menu?.image" alt="{{ menu?.title }}">
+  <p>{{ menu?.description }}</p>
+</div>
+
+<ng-template #loading>
+  <p>Loading menu details...</p>
+</ng-template>

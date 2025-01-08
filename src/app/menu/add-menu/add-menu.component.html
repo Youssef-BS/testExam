@@ -1,0 +1,23 @@
+<h1>Menu a propose</h1>
+<form [formGroup] = "formMenu"  (ngSubmit)="save()">
+  titre <input type="text" name="titre" formControlName="titre" />
+  <br />
+  <div class="alert alert-danger container" *ngIf="formMenu.get('titre')?.invalid &&
+  formMenu.get('titre')?.touched">
+   <div *ngIf="formMenu.get('titre')?.hasError('required')">
+     this field is required
+   </div>
+ </div>
+
+  description <input type="text" formControlName="description" /><br />
+  <div class="alert alert-danger container" *ngIf="formMenu.get('description')?.invalid &&
+  formMenu.get('description')?.touched">
+  <div *ngIf="formMenu.get('description')?.hasError('required')">
+    this field is required
+  </div>
+  <div *ngIf="formMenu.get('description')?.hasError('minLength')">
+    length must be greater than 10
+  </div>
+</div>
+  <input type="submit" value="Proposer" [disabled]="formMenu.invalid"/>
+</form>

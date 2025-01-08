@@ -1,0 +1,6 @@
+<ng-container *ngFor="let m of listMenuApproved" class="list">
+  {{m.title}} <br />
+  <img src={{m.image}} alt="" width="250" /><br />
+  <a [routerLink]="'/details/' + m.id">details</a>
+  <button>Réserver</button>
+</ng-container>

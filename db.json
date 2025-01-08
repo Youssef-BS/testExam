@@ -1,0 +1,38 @@
+{
+  "menus": [
+    {
+      "title": "menu gold ",
+      "image": "https://neat-food.com/cdn/shop/files/neat_emmapharaoh_19march24_12.jpg?v=1712845654&width=4498",
+      "description": "mohamed",
+      "mark": "2",
+      "approved": true,
+      "reservations": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "id": "1"
+    },
+    {
+      "title": "menu silver",
+      "image": "https://neat-food.com/cdn/shop/files/neat_emmapharaoh_19march24_12.jpg?v=1712845654&width=4498",
+      "description": "test2",
+      "mark": 10,
+      "approved": true,
+      "reservations": [
+        2
+      ],
+      "id": "2"
+    },
+    {
+      "title": "mohamedbenMohamed@mail.com",
+      "image": "https://neat-food.com/cdn/shop/files/neat_emmapharaoh_19march24_12.jpg?v=1712845654&width=4498",
+      "description": "not approved",
+      "mark": 10,
+      "approved": false,
+      "reservations": [],
+      "id": "3"
+    }
+  ]
+}
